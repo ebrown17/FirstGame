@@ -23,9 +23,9 @@ public class Game extends Canvas implements Runnable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	public static int width = 300;
+	public static int width = 900;
 	public static int height = width / 16 * 9;
-	public static int scale = 3;
+	public static int scale = 1;
 	public static String title = "First Game";
 	
 	private Thread mainGame;

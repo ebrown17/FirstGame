@@ -64,15 +64,15 @@ public class Screen {
 		xp -=xOffset;
 		yp -=yOffset;
 		
-		for(int y=0; y < 32; y++){
+		for(int y=0; y < 64; y++){
 			int ya = y + yp;
 			
-			for(int x=0; x<32;x++){
+			for(int x=0; x<64;x++){
 				int xa = x + xp;
-				if(xa < -32|| xa >= width || ya < 0 || ya >= height) break;
+				if(xa < -64|| xa >= width || ya < 0 || ya >= height) break;
 				if(xa < 0) xa=0;
-				int color = sprite.pixels[x + y * 32];
-				if(color!=0xffff00ff) pixels[xa + ya * width] = color;
+				int color = sprite.pixels[x + y * 64];
+				if(color!=0xff5e4229) pixels[xa + ya * width] = color;
 				
 			}
 		}
